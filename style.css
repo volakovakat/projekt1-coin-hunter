@@ -19,7 +19,8 @@ body {
 	height: 100vh;
 	background-color: var(--pozadi);
 	background-repeat: repeat;
-	background-image: url('obrazky/pozadi/geometry.png');
+	background-image: url('obrazky/pozadi/weather.png');
+	/*background-image: url('obrazky/pozadi/geometry.png');
 
 	/*  vyzkoušej i jiná pozadí :)
 	background-image: url('obrazky/pozadi/round.png');
@@ -41,11 +42,41 @@ body {
 	color: var(--score);
 }
 
-#panacek,
 #mince {
 	position: absolute;
 }
 
 #panacek {
 	z-index: 1;
+	position: absolute;
 }
+
+.schovatMinci {
+	display: none;
+}
+
+.vitez {
+	background-image: url('obrazky/pozadi/geometry.png');
+	position: absolute;
+	z-index: 2;
+	width: 400px;
+	height: 200px;
+	top: calc(50% - 100px);
+	left: calc(50% - 200px);
+	display: none;
+	box-shadow: 5px 5px #888888;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+
+button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	background-color: pink;
+	width: 300px;
+	height: 50px;
+	margin: 50px 50px;
+}
+
+
+
